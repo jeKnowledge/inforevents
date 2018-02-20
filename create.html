@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InforEvents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="create.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<form class="form-4">
+    <div id="title">Criar Evento</div>
+    <input type="text" name="local" placeholder="Local">
+    <textarea name="desc" placeholder="Descrição"></textarea>
+    <input type="date" name="data">
+    <input type="time" name="horas">
+    <select>
+        <option value="Convívio">Convívio</option>
+        <option value="Cultura">Cultura</option>
+        <option value="Desporto">Desporto</option>
+        <option value="Praxe">Praxe</option>
+    </select>
+    <input type="number" name="quantity" min="0" max="99" placeholder="Preço">
+    <input type="file" name="img">
+    <input type="submit" name="submit" value="Criar">
+</form>
+</body>
+</html>

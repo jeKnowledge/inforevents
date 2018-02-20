@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InforEvents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<!-- Use any element to open the sidenav -->
+<div id="mySidenav" class="sidenav">
+    <a class="title color-font extralight-font" href="/inforevents/index.html">InforEvents</a>
+    <input id="search2" class="light-font size-font" type="text" placeholder="Search">
+    <a href="events-list.html" class="item color-font semibold-font size-font">Tema</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">cultura</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">convívios</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">desporto</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">praxe</a>
+    <a href="events-list.html" class="item color-font semibold-font size-font">Organização</a>
+    <button class="subitem1 color-font size-font">uc</button>
+    <div class="panel">
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fluc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fduc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fmuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fctuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">ffuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">feuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fpceuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fcdef</a>
+    </div>
+    <button class="subitem1 color-font size-font">ipc</button>
+    <div class="panel">
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">esac</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">esec</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">estesc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">estgoh</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">iscac</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">isec</a>
+    </div>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">ismt</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">isbb</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">esenfc</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">euvg</a>
+    <script>
+        var acc = document.getElementsByClassName("subitem1");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</div>
+<div class="mobile">
+    <div class="menuIcon" onclick="myFunction(this),openNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="mobile-title">
+        <a href="/inforevents/index.html">InforEvents</a>
+    </div>
+    <div class="login">
+        <a href="/inforevents/login.html"><img class="login" src="images/login.png" alt="icon-login"/></a>
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").classList.toggle("sidenavtoogle");
+        }
+    </script>
+</div>
+<div class="main">
+    <div class="full-page-size">
+        <div class="full-page">
+            <div class="container">
+                <div class="main-title color-font extralight-font">InforEvents</div>
+            </div>
+            <div class="container">
+                <input id="search1" type="text" placeholder="Procura por eventos em Coimbra">
+            </div>
+            <div class="half-container">
+                <div class="photo-text">
+                    <div class="photo-text-inside">
+                        <a id="tema-img" href="events-list.html"></a>
+                        <div class="txt">
+                            <article>
+                                <p class="color-font light-font size-font">
+                                    <a href="events-list.html">TEMA</a>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="half-container">
+                <div class="photo-text">
+                    <div class="photo-text-inside">
+                        <a id="org-img" href="events-list.html"></a>
+                        <div class="txt">
+                            <article>
+                                <p class="color-font light-font size-font">
+                                    <a href="events-list.html">ORG</a>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

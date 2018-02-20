@@ -1,0 +1,135 @@
+html, body {
+    font-size: 16px;
+    background: url(images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6.37vw; /*80px*/
+    text-align: center;
+    margin: 0;
+    padding-top: 32px;
+}
+/*.line {
+    width: 95%;
+    height: 1px;
+    background-color: #1690C3;
+    margin: auto;
+}*/
+
+.full-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.half-page {
+    width: 50%;
+    height: 100%;
+}
+
+.photo-text {
+    margin: 0 auto;
+    width: 100%;
+    height: 528px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.photo-text-inside {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    box-sizing: border-box;
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0 #393939;
+    transition: all 1s;
+}
+
+.img {
+    width: 100%;
+    height: 432px;
+    background: url(images/placeholder1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.txt {
+    width: 100%;
+    height: 104px;
+    padding-top: 16px;
+}
+
+.quarter-page {
+    width: 25%;
+    height: 496px;
+    text-align: center
+}
+
+.img-name {
+    width: 100%;
+    height: calc(85% / 3);
+    position: relative;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.img-name-inside {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    box-sizing: border-box;
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0 #393939;
+    transition: all 1s;
+}
+
+.small-line {
+    margin: 0 auto;
+    width: 75%;
+    height: 1px;
+    background-color: #1690C3;
+}
+
+.img-name img {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .half-page{
+        width: 100%;
+    }
+
+    .quarter-page{
+        width: 50%;
+    }
+
+    .photo-text-inside{
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 640px) {
+    section{
+        padding: 0;
+    }
+
+    .line{
+        width: 90%;
+    }
+}
+

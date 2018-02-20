@@ -1,0 +1,26 @@
+.form-4 input[type=submit] {
+    width: 11.25rem;
+}
+
+.form-4 #title {
+    font-size: 3.5rem;
+}
+
+#lg {
+    margin-right: 27px;
+}
+
+
+@media only screen and (max-width: 540px) {
+    .form-4 #title {
+        font-size: 2.5rem;
+    }
+
+    .form-4 input[type=submit] {
+        width: 8.375rem;
+    }
+
+    #lg {
+        margin-right: 11px;
+    }
+}

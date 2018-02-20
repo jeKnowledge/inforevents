@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InforEvents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="event.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<!-- Use any element to open the sidenav -->
+<div id="mySidenav" class="sidenav">
+    <a class="title color-font extralight-font" href="/inforevents/index.html">InforEvents</a>
+    <input id="search2" class="light-font size-font" type="text" placeholder="Search">
+    <a href="events-list.html" class="item color-font semibold-font size-font">Tema</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">cultura</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">convívios</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">desporto</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">praxe</a>
+    <a href="events-list.html" class="item color-font semibold-font size-font">Organização</a>
+    <button class="subitem1 color-font size-font">uc</button>
+    <div class="panel">
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fluc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fduc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fmuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fctuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">ffuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">feuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fpceuc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">fcdef</a>
+    </div>
+    <button class="subitem1 color-font size-font">ipc</button>
+    <div class="panel">
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">esac</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">esec</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">estesc</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">estgoh</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">iscac</a>
+        <a class="subsubitem color-font light-font size-font" href="events-list.html">isec</a>
+    </div>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">ismt</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">isbb</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">esenfc</a>
+    <a href="events-list.html" class="subitem2 color-font light-font size-font">euvg</a>
+
+    <script>
+        var acc = document.getElementsByClassName("subitem1");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</div>
+<div class="mobile">
+    <div class="menuIcon" onclick="myFunction(this), openNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="mobile-title">
+        <a href="/inforevents/index.html">InforEvents</a>
+    </div>
+    <div class="login">
+        <a href="/inforevents/login.html"><img class="login" src="images/login.png" alt="icon-login"/></a>
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        function openNav() {
+            document.getElementById("mySidenav").classList.toggle("sidenavtoogle");
+        }
+    </script>
+</div>
+<div class="main">
+    <div class="login">
+        <a href="/inforevents/login.html"><img class="login" src="images/login.png" alt="icon-login"/></a>
+    </div>
+    <section>
+        <h1 class="semibold-font color-font">Ténis Sport Fest</h1>
+        <div class="full-page">
+            <div class="half-page">
+                <div class="photo-text">
+                    <div class="photo-text-inside">
+                        <div class="img">
+                        </div>
+                        <div class="txt">
+                            <article>
+                                <p class="color-font light-font size-font">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                    aliquam erat volutpat.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quarter-page">
+                <div class="img-name">
+                    <div class="img-name-inside">
+                        <img src="images/casa.png" alt="casa" height="57" width="60"/>
+                        <p class="light-font color-font size-font">Campo de Ténis</p>
+                    </div>
+                </div>
+                <div class="small-line"></div>
+                <div class="img-name">
+                    <div class="img-name-inside">
+                        <img src="images/horas.png" alt="horas" height="58" width="60"/>
+                        <p class="light-font color-font size-font">16:00</p>
+                    </div>
+                </div>
+                <div class="small-line"></div>
+                <div class="img-name">
+                    <div class="img-name-inside">
+                        <img src="images/cal.png" alt="cal" height="58" width="60"/>
+                        <p class="light-font color-font size-font">26/04</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quarter-page">
+                <div class="img-name">
+                    <div class="img-name-inside">
+                        <img src="images/pessoa.png" alt="casa" height="57" width="60"/>
+                        <p class="light-font color-font size-font">NEI</p>
+                    </div>
+                </div>
+                <div class="small-line"></div>
+                <div class="img-name">
+                    <div class="img-name-inside">
+                        <img src="images/euro.png" alt="horas" height="48" width="49"/>
+                        <p class="light-font color-font size-font">5 euros</p>
+                    </div>
+                </div>
+                <div class="small-line"></div>
+                <div class="img-name">
+                    <div class="img-name-inside">
+                        <img src="images/hashtag.png" alt="cal" height="58" width="60"/>
+                        <p class="light-font color-font size-font">desporto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

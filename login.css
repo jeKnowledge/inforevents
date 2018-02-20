@@ -1,0 +1,141 @@
+html {
+    font-size: 16px;
+    background: url(images/background.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form-4 {
+    /* Size and position */
+    width: 19rem;
+    margin: 7rem auto 2rem;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    /* Font styles */
+    font-family: "Montserrat ExtraLight", sans-serif;
+    color: rgb(240, 240, 240);
+}
+
+.form-4 #title {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 3.5rem;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+
+#image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-4 input[type=text],
+.form-4 input[type=password] {
+    /* Size and position */
+    width: 17.375rem;
+    height: 1.5rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    margin-bottom: 2rem;
+    /* Styles */
+    border: 1px solid #1690C3;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    /* Font styles */
+    font-family: "Montserrat Light", sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+}
+
+.form-4 input::-webkit-input-placeholder {
+    color: rgb(240, 240, 240);
+}
+
+.form-4 input:-moz-placeholder {
+    color: rgb(240, 240, 240);
+}
+
+.form-4 input:-ms-input-placeholder {
+    color: rgb(240, 240, 240);
+}
+
+.form-4 input[type=text]:hover,
+.form-4 input[type=password]:hover {
+    border-color: rgb(240, 240, 240);
+}
+
+.form-4 input[type=text]:focus,
+.form-4 input[type=password]:focus,
+.form-4 input[type=submit]:focus {
+    background: #1690C3;
+    outline: none;
+}
+
+.form-4 input[type=submit] {
+    /* Size and position */
+    width: 8rem;
+    height: 2.625rem;
+    padding: 0.5rem;
+    /* Styles */
+    background: #1690C3;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(240, 240, 240);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    /* Font styles */
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+    font-family: "Montserrat Light", sans-serif;
+}
+
+#left {
+    margin-right: 1.69rem;
+}
+
+.form-4 input[type=submit]:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.form-4 label {
+    display: none;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+}
+
+.form-4 label:hover ~ input {
+    border-color: #333;
+}
+
+.no-placeholder .form-4 label {
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+a:hover {
+    color: #1690C3;
+}
+
+@media only screen and (max-width: 540px) {
+    html {
+        background: url(images/backgroundmobile.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

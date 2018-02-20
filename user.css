@@ -1,0 +1,135 @@
+html {
+    font-size: 16px;
+    background: url(images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+}
+
+.all-events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    width: 26rem;
+    height: 10rem;
+    display: flex;
+    position: relative;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.event:hover {
+    transform: scale(1.08);
+}
+
+.event-inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.event-img {
+    width: 100%;
+    background: url(images/placeholder1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.event-txt {
+    width: 280px;
+    padding-left: 16px;
+}
+
+.event-txt h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.event-txt h4 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 6.37vw; /*80px*/
+    text-align: center;
+    margin: 0;
+    padding-top: 32px;
+}
+
+/*.line {
+    width: 90%;
+    height: 1px;
+    background-color: #1690C3;
+    margin: auto;
+}*/
+.butt {
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+}
+
+input[type=submit] {
+    width: 40%;
+    height: 2.625rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 0.25rem;
+    background: #1690C3;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+    font-family: "Montserrat Light", sans-serif;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+input[type=submit]:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+input[type=submit]:focus {
+    background: #1690C3;
+    outline: none;
+}
+
+@media screen and (min-width: 640px) {
+    section {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 4rem 0 4rem;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .event-txt h3 {
+        font-size: 14px;
+    }
+    .event-txt h4 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .event-txt h3 {
+        margin-top: 8px;
+    }
+}

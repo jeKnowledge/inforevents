@@ -1,0 +1,155 @@
+html {
+    font-size: 16px;
+    background: url(images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body, .main {
+    margin: 0;
+}
+
+.full-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.full-page-size {
+    width: 44rem;
+    height: 36rem;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    text-align: center
+}
+
+.half-container {
+    width: 50%;
+}
+
+.main-title {
+    margin-top: 1em;
+    font-size: 7rem;
+    cursor: default;
+}
+
+#search1 {
+    width: 33.375rem;
+    padding: 12px;
+    margin: 2rem;
+    border: 1px solid #1690C3;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family: "Montserrat Light", sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+
+}
+
+#search1::-webkit-input-placeholder {
+    color: rgb(240, 240, 240);
+}
+
+#search1:-moz-placeholder {
+    color: rgb(240, 240, 240);
+}
+
+#search1:-ms-input-placeholder {
+    color: rgb(240, 240, 240);
+}
+
+#search1:hover {
+    border-color: rgb(240, 240, 240);
+}
+
+#search1:focus {
+    background-color: #1690C3;
+    outline: none;
+}
+
+
+.photo-text {
+    height: 13rem;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+.photo-text-inside {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+.txt {
+    text-align: center;
+}
+
+#tema-img {
+    height: 100%;
+    background: url(images/tema.png) no-repeat center;
+}
+
+#org-img {
+    height: 100%;
+    background: url(images/org.png) no-repeat center;
+}
+
+/* NavBar Settings  */
+.sidenav {
+    width: 0;
+    border: none;
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        background: url(images/backgroundmobile.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .main {
+        margin-top: 4.125rem;
+    }
+
+    .full-page-size {
+        width: 18rem;
+    }
+
+    .sidenavtoogle {
+        width: 14rem;
+        top: 4rem;
+        border: 1px solid #1690C3;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .half-container {
+        width: 100%;
+        margin-top: 3rem;
+    }
+}
+
+
+
+
+
